@@ -1,0 +1,82 @@
+header{
+    background-color: rgba(167, 163, 163, 0.356);
+    display: flex; 
+       justify-content: space-between;
+       align-items: center;
+}
+nav{
+    background-color: rgb(41, 39, 39);
+    padding: 5px;
+
+}
+section{
+    grid-column: 1/4 ;
+    background-color: rgb(230, 225, 225);
+    padding: 30px;
+
+}
+aside{
+    grid-column: 4/5 ;
+    background-color: rgb(17, 17, 17);
+    padding: 20px;
+
+}
+footer{
+    background-color: rgba(8, 8, 8, 0.164);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(119, 115, 115);
+    background: rgb(5, 5, 5);
+    height: 50px;
+    text-decoration: none;
+    
+}
+.menu-area a:hover {
+    background: rgb(13, 13, 14);
+    color: rgb(235, 230, 230);
+
+
+}
+.menu-area ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-area li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-area li:hover .dropdown-1>li {
+    top: 0;
+    display: block;
+}
+
+.dropdown-1 li {
+    display: none;
+    position: relative;
+}
+
+.dropdown-1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown-1 li:hover {
+    display: block;
+}
